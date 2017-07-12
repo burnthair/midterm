@@ -1,0 +1,21 @@
+/*
+curtain asset
+"click the curtain to select your seat"
+create a container div that will drop form the top of the screen as the curtain raises
+"please select your seats" fades in when the div is in place.
+UI bar shows up on seat click
+on seat hover change color of seat slightly
+on seat click change more different color
+on reserve click, modal pops up with input values and selected seats change color again
+modal can be dismissed
+hover over reserved seats shows styled tooltip
+*/
+* {
+  border: 1px solid black;
+  padding: 10px;
+  
+}
+
+#seat-container {
+  padding: 10px;
+}
