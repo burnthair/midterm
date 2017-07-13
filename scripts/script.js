@@ -11,13 +11,11 @@ $('div.seat').click(function (){
   $('#ui').removeClass('hidden')
 });
 
-//Loading user inputs into modal
-$('#submit').click(function () {
-  var firstName = document.getElementById('fname');
-  var lastName = document.getElementById('lname');
-  var email = document.getElementById('email');
-  var phone = document.getElementById('phone');
-
-console.log(firstName);
-
-})
+//Clicking submit button opens confirmation modal
+$('#submit').click(function() {
+  $('#modal-container').fadeIn('slow')
+});
+//Clicking X button on modal closes confirmation modal
+$('#close').click(function() {
+  $('#modal-container').fadeOut('slow')
+);

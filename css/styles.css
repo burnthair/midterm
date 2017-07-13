@@ -111,6 +111,7 @@ html, body {
   }
 
 .modal-container {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -125,4 +126,8 @@ html, body {
   height: 300px;
   padding: 25px;
   margin: 15% auto;
+}
+
+.close {
+
 }
