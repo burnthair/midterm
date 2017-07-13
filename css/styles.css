@@ -10,21 +10,28 @@ on reserve click, modal pops up with input values and selected seats change colo
 modal can be dismissed
 hover over reserved seats shows styled tooltip
 media query at 1200px for smaller resolutions
+
+curtain height and width adjusted to viewport size
 */
 
 html, body {
   margin: 0;
   padding: 0;
-  background: #667; !important;
+  background: #667 !important;
 }
 
 .curtain {
   position: absolute;
-  top: -460px;
-  z-index: 9999;
-  width: 100%;
-  overflow: hidden;
-  display: none;
+  z-index: 99;
+}
+
+.clickhere {
+  position: absolute;
+  z-index: 100;
+  top: 25%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -41,6 +48,7 @@ html, body {
   transform: translate(0, 600px);
 }
 
+
 #seat-container {
   margin: 0 auto;
   margin-top: 20px;
@@ -52,9 +60,7 @@ html, body {
   z-index: 0;
 }
 
-.main-seat-column {
-
-}
+.main-seat-column {}
 
 #left-seat-column {
   margin-top: 45px;
@@ -68,7 +74,7 @@ html, body {
   margin-top: 24px;
 }
 
-#right-seat-column{
+#right-seat-column {
   margin-top: 25px;
 }
 
@@ -106,29 +112,29 @@ html, body {
   margin-top: 30px;
   -webkit-transform: rotate(23deg);
   -moz-transform: rotate(23deg);
-    -o-transform: rotate(23deg);
-    -ms-transform: rotate(23deg);
-    transform: rotate(23deg);
+  -o-transform: rotate(23deg);
+  -ms-transform: rotate(23deg);
+  transform: rotate(23deg);
 }
 
 .right-rotate {
   margin-top: 30px;
   -webkit-transform: rotate(-23deg);
-    -moz-transform: rotate(-23deg);
-    -o-transform: rotate(-23deg);
-    -ms-transform: rotate(-23deg);
-    transform: rotate(-23deg);
+  -moz-transform: rotate(-23deg);
+  -o-transform: rotate(-23deg);
+  -ms-transform: rotate(-23deg);
+  transform: rotate(-23deg);
 }
 
-  .hidden {
-    display: none;
-  }
-  #ui {
-    height: ;
-  }
-  #submit {
+.hidden {
+  display: none;
+}
 
-  }
+#ui {
+  height: ;
+}
+
+#submit {}
 
 .modal-container {
   display: none;
@@ -148,6 +154,4 @@ html, body {
   margin: 15% auto;
 }
 
-.close {
-
-}
+.close {}
