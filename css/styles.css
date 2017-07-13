@@ -99,3 +99,7 @@ html, body {
     -ms-transform: rotate(-40deg);
     transform: rotate(-40deg);
 }
+
+  .hidden {
+    display: none;
+  }
