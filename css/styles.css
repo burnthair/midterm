@@ -22,8 +22,8 @@ html, body {
 }
 
 .curtain {
-  position: absolute;
-  z-index: 9999px;
+  position: fixed;
+  z-index: 99;
 }
 
 #seat-container {
