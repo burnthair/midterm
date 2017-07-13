@@ -1,23 +1,24 @@
 /*TODO
-curtain asset -- JEFF
-"click the curtain to select your seat" -- JEFF
-create a container div that will drop form the top of the screen as the curtain raises -- ME
-"please select your seats" fades in when the div is in place. -- ME
-UI bar shows up on seat click -- PHIL
-on seat hover change color of seat slightly -- OPACITY CHANGED -- ME
-on seat click change more different color -- CHANGE CSS FILTER HUE ROTATE TO 240deg -- PHIL
+curtain asset
+"click the curtain to select your seat"
+create a container div that will drop form the top of the screen as the curtain raises
+"please select your seats" fades in when the div is in place.
+UI bar shows up on seat click
+on seat hover change color of seat slightly -- OPACITY CHANGED
+on seat click change more different color -- CHANGE CSS FILTER HUE ROTATE TO 240deg
 on reserve click, modal pops up with input values and selected seats change color again
 modal can be dismissed
 hover over reserved seats shows styled tooltip
 media query at 1200px for smaller resolutions
+*//** {
+  border: 1px solid black;
+  padding: 10px;*/
 
-curtain height and width adjusted to viewport size
-*/
-
+}
 html, body {
   margin: 0;
   padding: 0;
-  background: #667 !important;
+  background: black !important;
 }
 
 .curtain {
@@ -48,34 +49,33 @@ html, body {
   transform: translate(0, 600px);
 }
 
-
 #seat-container {
-  margin: 0 auto;
-  margin-top: 20px;
-  background-color: white;
+  margin-top: 80px;
   padding: 40px;
-  border: 3px solid #556;
+  border: 3px solid darkGrey;
   border-radius: 20px;
   position: relative;
   z-index: 0;
 }
 
-.main-seat-column {}
+.main-seat-column {
+
+}
 
 #left-seat-column {
-  margin-top: 45px;
+  margin-top: 85px;
 }
 
 #center-seat-column {
-  margin-top: 70px;
+  margin-top: 170px;
 }
 
 #center-seat-column .row {
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
-#right-seat-column {
-  margin-top: 25px;
+#right-seat-column{
+  margin-top: 65px;
 }
 
 .seat {
@@ -83,6 +83,7 @@ html, body {
   margin: 10px;
   background-image: url(../img/seat.png);
   background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .selected-seat {
@@ -96,12 +97,8 @@ html, body {
 #header {
   position: relative;
   text-align: center;
-  font-size: 1.3em;
-  font-family: 'Varela Round', sans-serif;
-  color: #556;
-  top: -20px;
-  right: 15px;
-  opacity: 0;
+  top: -100px;
+  right: 30px;
 }
 
 #center-seat-column .seat {
@@ -110,31 +107,31 @@ html, body {
 
 .left-rotate {
   margin-top: 30px;
-  -webkit-transform: rotate(23deg);
-  -moz-transform: rotate(23deg);
-  -o-transform: rotate(23deg);
-  -ms-transform: rotate(23deg);
-  transform: rotate(23deg);
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
 }
 
 .right-rotate {
   margin-top: 30px;
-  -webkit-transform: rotate(-23deg);
-  -moz-transform: rotate(-23deg);
-  -o-transform: rotate(-23deg);
-  -ms-transform: rotate(-23deg);
-  transform: rotate(-23deg);
+  -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
 }
 
-.hidden {
-  display: none;
-}
+  .hidden {
+    display: none;
+  }
+  #ui {
+    height: ;
+  }
+  #submit {
 
-#ui {
-  height: ;
-}
-
-#submit {}
+  }
 
 .modal-container {
   position: fixed;
@@ -142,15 +139,16 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
 }
 
 .modal-contents {
   background-color: white;
   width: 500px;
-  height: 300px;
+  height: auto;
   padding: 25px;
   margin: 15% auto;
 }
 
-.close {}
+.close {
+
+}
