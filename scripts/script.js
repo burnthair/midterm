@@ -1,4 +1,5 @@
 console.log('Have fun!');
 function openCurtain(){
-  $(".curtain").animate({height: "100px"}, 1000)
+  $(".curtain").slideUp(2000)
+//  $(".curtain").animate({height: "100px"}, 2000)
 }
