@@ -1,21 +1,101 @@
-/*
+/*TODO
 curtain asset
 "click the curtain to select your seat"
 create a container div that will drop form the top of the screen as the curtain raises
 "please select your seats" fades in when the div is in place.
 UI bar shows up on seat click
-on seat hover change color of seat slightly
-on seat click change more different color
+on seat hover change color of seat slightly -- OPACITY CHANGED
+on seat click change more different color -- CHANGE CSS FILTER HUE ROTATE TO 240deg
 on reserve click, modal pops up with input values and selected seats change color again
 modal can be dismissed
 hover over reserved seats shows styled tooltip
-*/
-* {
+media query at 1200px for smaller resolutions
+*//** {
   border: 1px solid black;
-  padding: 10px;
-  
+  padding: 10px;*/
+
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background: black !important;
+}
+
+.curtain {
+  position: absolute;
+  z-index: 9999px;
 }
 
 #seat-container {
-  padding: 10px;
+  margin-top: 80px;
+  padding: 40px;
+  border: 3px solid darkGrey;
+  border-radius: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.main-seat-column {
+
+}
+
+#left-seat-column {
+  margin-top: 85px;
+}
+
+#center-seat-column {
+  margin-top: 170px;
+}
+
+#center-seat-column .row {
+  margin-top: 20px;
+}
+
+#right-seat-column{
+  margin-top: 65px;
+}
+
+.seat {
+  height: 80px;
+  margin: 10px;
+  background-image: url(../img/seat.png);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.selected-seat {
+  filter: hue-rotate(240deg);
+}
+
+.seat:hover {
+  opacity: 0.8;
+}
+
+#header {
+  position: relative;
+  text-align: center;
+  top: -100px;
+  right: 30px;
+}
+
+#center-seat-column .seat {
+  /*transform: translate(16px);*/
+}
+
+.left-rotate {
+  margin-top: 30px;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+
+.right-rotate {
+  margin-top: 30px;
+  -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
 }
