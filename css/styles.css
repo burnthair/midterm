@@ -1,5 +1,5 @@
 /*TODO
-curtain asset
+curtain asset -- JEFF
 "click the curtain to select your seat"
 create a container div that will drop form the top of the screen as the curtain raises
 "please select your seats" fades in when the div is in place.
@@ -23,13 +23,28 @@ html, body {
 
 .curtain {
   position: absolute;
-  z-index: 9999px;
+  top: -460px;
+  z-index: 9999;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+.container {
+  position: absolute;
+  top: -100px;
+  transition: all 2s;
+}
+
+.container-is-active {
+  position: absolute;
+  transform: translate(0, 30px);
 }
 
 #seat-container {
-  margin-top: 80px;
+  margin-top: 20px;
   padding: 40px;
-  border: 3px solid darkGrey;
+  border: 3px solid #556;
   border-radius: 20px;
   position: relative;
   z-index: 0;
@@ -40,19 +55,19 @@ html, body {
 }
 
 #left-seat-column {
-  margin-top: 85px;
+  margin-top: 45px;
 }
 
 #center-seat-column {
-  margin-top: 170px;
+  margin-top: 70px;
 }
 
 #center-seat-column .row {
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 #right-seat-column{
-  margin-top: 65px;
+  margin-top: 25px;
 }
 
 .seat {
@@ -60,7 +75,6 @@ html, body {
   margin: 10px;
   background-image: url(../img/seat.png);
   background-repeat: no-repeat;
-  border-radius: 10px;
 }
 
 .selected-seat {
@@ -74,8 +88,12 @@ html, body {
 #header {
   position: relative;
   text-align: center;
-  top: -100px;
-  right: 30px;
+  font-size: 1.3em;
+  font-family: 'Varela Round', sans-serif;
+  color: #556;
+  top: -20px;
+  right: 15px;
+  opacity: 0;
 }
 
 #center-seat-column .seat {
@@ -84,18 +102,18 @@ html, body {
 
 .left-rotate {
   margin-top: 30px;
-  -webkit-transform: rotate(40deg);
-  -moz-transform: rotate(40deg);
-    -o-transform: rotate(40deg);
-    -ms-transform: rotate(40deg);
-    transform: rotate(40deg);
+  -webkit-transform: rotate(23deg);
+  -moz-transform: rotate(23deg);
+    -o-transform: rotate(23deg);
+    -ms-transform: rotate(23deg);
+    transform: rotate(23deg);
 }
 
 .right-rotate {
   margin-top: 30px;
-  -webkit-transform: rotate(-40deg);
-    -moz-transform: rotate(-40deg);
-    -o-transform: rotate(-40deg);
-    -ms-transform: rotate(-40deg);
-    transform: rotate(-40deg);
+  -webkit-transform: rotate(-23deg);
+    -moz-transform: rotate(-23deg);
+    -o-transform: rotate(-23deg);
+    -ms-transform: rotate(-23deg);
+    transform: rotate(-23deg);
 }
