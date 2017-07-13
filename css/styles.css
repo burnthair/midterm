@@ -25,7 +25,7 @@ html, body {
   z-index: 99;
 }
 
-.clickhere {
+.welcome-message {
   position: absolute;
   z-index: 100;
   top: 25%;
@@ -137,7 +137,6 @@ html, body {
 #submit {}
 
 .modal-container {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;

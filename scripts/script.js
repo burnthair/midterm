@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 });
 
-//Upon click, select seat
+//Upon clicking a seat, select seat
 $('div.seat').click(function(){
   $(this).toggleClass('selected-seat')
 })
