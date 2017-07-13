@@ -10,6 +10,12 @@ $(document).ready(function(){
 
 });
 
+//this slides up the curtain over 2 seconds on click
+function openCurtain(){
+  $(".curtain").slideUp(2000);
+  $("h1").fadeOut("clickhere");
+};
+
 //Upon clicking a seat, select seat
 $('div.seat').click(function(){
   $(this).toggleClass('selected-seat')
@@ -20,12 +26,29 @@ $('div.seat').click(function (){
   $('#ui').removeClass('hidden')
 });
 
-//this slides up the curtain over 2 seconds on click
-function openCurtain(){
-  $(".curtain").slideUp(2000);
-  $("h1").fadeOut("clickhere");
-};
-//Upon submit, display confirmation modal
-$('#submit').click(function (){
-  $('.modal-container').removeClass('hidden')
+// Upon clicking the Submit button, a modal appears
+// Upon clicking the Submit button, the user input is placed into an object
+// The user input is displayed in the modal
+$('#submit').click(function(){
+  $('.modal-container').removeClass('hidden');
+  var patron = {
+    firstName : document.getElementById('fname').value,
+    lastName : document.getElementById('lname').value,
+    phoneNumber : document.getElementById('phone').value,
+    email : document.getElementById('email').value
+  }
+  $('.insert-first-name').append(patron.firstName);
+  $('#insert-last-name').append(patron.lastName);
+  $('#insert-phone-number').append(patron.phoneNumber);
+  $('#insert-email').append(patron.email);
+  var chosenSeats = document.getElementsByClassName("selected-seat");
+  for (var i = 0; i < chosenSeats.length; i++) {
+    $('#insert-seat-ids').append(chosenSeats[i].id + ' ');
+    $(chosenSeats[i]).addClass('reserved-seat');
+    
+  }
+});
+
+$('.modal-container').click(function(){
+  $('.modal-container').addClass('hidden');
 })

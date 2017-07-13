@@ -10,9 +10,11 @@ on reserve click, modal pops up with input values and selected seats change colo
 modal can be dismissed
 hover over reserved seats shows styled tooltip
 media query at 1200px for smaller resolutions
-*//** {
-  border: 1px solid black;
-  padding: 10px;*/
+
+fix the instruction line text
+look up how to add a data attribute:
+style modal;
+*/
 
 }
 html, body {
@@ -139,10 +141,11 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 9999;
 }
 
 .modal-contents {
-  background-color: white;
+  background-color: grey;
   width: 500px;
   height: auto;
   padding: 25px;
@@ -151,4 +154,8 @@ html, body {
 
 .close {
 
+}
+
+.reserved-seat {
+  filter: grayscale(0.8); 
 }
