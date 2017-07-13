@@ -103,3 +103,26 @@ html, body {
   .hidden {
     display: none;
   }
+  #ui {
+    height: ;
+  }
+  #submit {
+
+  }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.modal-contents {
+  background-color: white;
+  width: 500px;
+  height: 300px;
+  padding: 25px;
+  margin: 15% auto;
+}
