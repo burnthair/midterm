@@ -1,5 +1,5 @@
 /*TODO
-curtain asset
+--curtain asset
 "click the curtain to select your seat"
 create a container div that will drop form the top of the screen as the curtain raises
 "please select your seats" fades in when the div is in place.
@@ -24,6 +24,24 @@ html, body {
 .curtain {
   position: fixed;
   z-index: 99;
+}
+.clickhere {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.clickhere h1{
+  width:100%;
+  height:50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  text-align: center;
+  font-size: 50px;
+  color: black;
 }
 
 #seat-container {
