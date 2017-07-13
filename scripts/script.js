@@ -25,3 +25,7 @@ function openCurtain(){
   $(".curtain").slideUp(2000);
   $("h1").fadeOut("clickhere");
 };
+//Upon submit, display confirmation modal
+$('#submit').click(function (){
+  $('.modal-container').removeClass('hidden')
+})
