@@ -10,5 +10,3 @@ $('div.seat').click(function(){
 $('div.seat').click(function (){
   $('#ui').removeClass('hidden')
 });
-
-//Hide UI when no seats are selected
