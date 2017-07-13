@@ -10,10 +10,10 @@ $('div.seat').click(function(){
 $('div.seat').click(function (){
   $('#ui').removeClass('hidden')
 })
-
 //Clicking submit button opens confirmation modal
 $('#submit').click(function() {
-  $('#modal-container').fadeIn('slow')
+  //$('#modal-container').fadeIn('fast')
+  console.log('I work!')
 })
 //Clicking X button on modal closes confirmation modal
 $('#close').click(function() {
