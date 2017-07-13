@@ -1,24 +1,21 @@
 /*TODO
 curtain asset -- JEFF
-"click the curtain to select your seat"
-create a container div that will drop form the top of the screen as the curtain raises
-"please select your seats" fades in when the div is in place.
-UI bar shows up on seat click
-on seat hover change color of seat slightly -- OPACITY CHANGED
-on seat click change more different color -- CHANGE CSS FILTER HUE ROTATE TO 240deg
+"click the curtain to select your seat" -- JEFF
+create a container div that will drop form the top of the screen as the curtain raises -- ME
+"please select your seats" fades in when the div is in place. -- ME
+UI bar shows up on seat click -- PHIL
+on seat hover change color of seat slightly -- OPACITY CHANGED -- ME
+on seat click change more different color -- CHANGE CSS FILTER HUE ROTATE TO 240deg -- PHIL
 on reserve click, modal pops up with input values and selected seats change color again
 modal can be dismissed
 hover over reserved seats shows styled tooltip
 media query at 1200px for smaller resolutions
-*//** {
-  border: 1px solid black;
-  padding: 10px;*/
+*/
 
-}
 html, body {
   margin: 0;
   padding: 0;
-  background: black !important;
+  background: #667; !important;
 }
 
 .curtain {
@@ -32,17 +29,22 @@ html, body {
 
 .container {
   position: absolute;
-  top: -100px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  top: -600px;
   transition: all 2s;
 }
 
 .container-is-active {
-  position: absolute;
-  transform: translate(0, 30px);
+  transform: translate(0, 600px);
 }
 
 #seat-container {
+  margin: 0 auto;
   margin-top: 20px;
+  background-color: white;
   padding: 40px;
   border: 3px solid #556;
   border-radius: 20px;
