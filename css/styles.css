@@ -21,6 +21,7 @@ style modal-container
 body background to dark color
 fix multiple prints of selected class in modal
 ui fade in
+clear form fields on submit:;
 */
 
 
@@ -32,7 +33,7 @@ body {
 }
 legend span {
   font-family: 'Marck Script', cursive;
-  color: white;
+  color: black;
 }
 input {
   width: 150px;

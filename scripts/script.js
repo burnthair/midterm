@@ -43,9 +43,15 @@ $('#submit').click(function(){
     $('#insert-seat-ids').append(chosenSeats[i].id + ' ');
     $(chosenSeats[i]).addClass('reserved-seat');
   }
-  chosenSeats.splice(0,chosenSeats.length);
+  $('.selected-seat').removeClass('selected-seat');
+  chosenSeats.length = 0;
 });
 
 $('.modal-container').click(function(){
   $('.modal-container').addClass('hidden');
+  $('.insert-first-name').html('<span> </span>');
+  $('#insert-last-name').html('<span> </span>');
+  $('#insert-phone-number').html('<span> </span>');
+  $('#insert-email').html('<span> </span>');
+  $('#insert-seat-ids').html('<span> </span>');
 })
