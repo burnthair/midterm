@@ -109,6 +109,11 @@ input {
 .hidden {
   display: none;
 }
+
+.hide {
+  display: hidden;
+}
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -163,7 +168,7 @@ input {
   position: absolute;
   padding: 10px;
   background-color: #75b3f0;
-  color: white;
+  color: #556;
   font-family: 'Varela Round', sans-serif;
   border-radius: 20px;
   text-align: center;
@@ -178,4 +183,12 @@ input {
   border-radius: 10px;
   padding: 4px;
   margin-top: 20px;
+}
+.reserved-by {
+  z-index: 9999;
+  color:white;
+}
+
+.reserved-seat:hover{
+  display: block;
 }
