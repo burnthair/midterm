@@ -6,15 +6,15 @@
   <title>Grand Circus Theatre</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marck+Script|Varela+Round" rel="stylesheet">
 </head>
 
 <body>
   <div>
     <!-- contain the Modal -->
     <div class="modal-container hidden">
-      <button class="close">X</button>
       <div class="modal-contents">
+        <button class="close">X</button>
         <p>Hey <span class="insert-first-name"></span>! Your reservation has been made! Details below.</p>
         <p>Name: <span class="insert-first-name"></span> <span id="insert-last-name"></span></p>
         <p>Phone: <span id="insert-phone-number"></span></p>
@@ -23,17 +23,15 @@
       </div>
     </div>
   </div>
-    <!-- contain the welcome message -->
-    <div class="curtain" onclick="openCurtain()">
-      <img src="././img/curtain.png" alt="">
-      <div class="welcome-message">
-        <h1>Welcome!</h1>
-      </div>
-    </div>
-    <!--// Overall container -->
+  <!-- contain the welcome message -->
+  <div class="curtain">
+    <img src="././img/curtain.png" alt="">
+    <h1 class="welcome-message">Welcome!</h1>
+  </div>
+  <!--// Overall container -->
   <div class="container">
     <div class="row" id="seat-container">
-    <!-- Div for first column -->
+      <!-- Div for first column -->
       <div class="col-lg-4 main-seat-column" id="left-seat-column">
         <div class="row left-rotate">
           <!--// Individual seat holder-->
@@ -93,24 +91,24 @@
         </div>
       </div>
     </div>
-    <div class="row hidden" id="ui">
+    <div class="row hidden" id="user-inputs">
       <div class="col-md-12">
         <form>
           <fieldset>
-            <legend>Your Reservation</legend>
+            <legend><span>Your Reservation</span></legend>
             <label for="name">Name:</label>
             <input type="text" name="first-name" placeholder="First" id="fname">
             <input type="text" name="last-name" placeholder="Last" id="lname">
-            <label for="phone">Phone number:</label>
-            <input type="text" name="phone" placeholder="XXXXXXXXXX" id="phone">
-            <label for="email">Email address:</label>
+            <label for="phone">Phone:</label>
+            <input type="number" name="phone" placeholder="XXXXXXXXXX" id="phone">
+            <label for="email">Email:</label>
             <input type="text" name="email" placeholder="yourEmail@host.com" id="email">
             <button type="button" id="submit">Submit</button>
           </fieldset>
         </form>
       </div>
     </div>
-
+  </div>
     <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
 </body>
