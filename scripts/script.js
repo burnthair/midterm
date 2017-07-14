@@ -54,4 +54,5 @@ $('.modal-container').click(function(){
   $('#insert-phone-number').html('<span> </span>');
   $('#insert-email').html('<span> </span>');
   $('#insert-seat-ids').html('<span> </span>');
+  $('form')[0].reset();
 })
