@@ -46,7 +46,7 @@ $(document).ready(function(){
       $(chosenSeats[i]).addClass('reserved-seat');
     }
     for (var i=0; i<chosenSeats.length; i++) {
-      $(chosenSeats[i]).html('<span class="reserved-by hide">'+patron.firstName+ ' ' +patron.lastName+ '</span>');
+      $(chosenSeats[i]).html('<div class="reserved-by hide">'+patron.firstName+ ' ' +patron.lastName+ '</div>');
     }
     $('.selected-seat').removeClass('selected-seat');
     chosenSeats.length = 0;

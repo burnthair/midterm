@@ -3,10 +3,12 @@ body {
   padding: 0;
   background-color: #556 !important;
 }
+
 legend span {
   font-family: 'Marck Script', cursive;
   color: black;
 }
+
 input {
   width: 150px;
   color: #556;
@@ -15,6 +17,7 @@ input {
   margin: 4px;
   border: none;
 }
+
 .curtain {
   position: absolute;
   margin: 0 auto;
@@ -30,6 +33,7 @@ input {
 .curtain-is-active {
   transform: translate(0, -580px);
 }
+
 .welcome-message {
   position: absolute;
   z-index: 100;
@@ -46,9 +50,10 @@ input {
   transform: rotate(-8deg);
   font-size: 5em;
 }
+
 .intro-message {
   position: absolute;
-  z-index:100;
+  z-index: 100;
   top: 68%;
   left: 40%;
   right: 40%;
@@ -58,6 +63,7 @@ input {
   color: white;
   font-family: 'Varela Round', sans-serif;
 }
+
 .container {
   position: absolute;
   margin: 0 auto;
@@ -66,11 +72,12 @@ input {
   width: 100vw;
   top: -600px;
   transition: all 2s;
-
 }
+
 .container-is-active {
   transform: translate(0, 600px);
 }
+
 .seat {
   height: 80px;
   margin: 10px;
@@ -78,12 +85,15 @@ input {
   background-repeat: no-repeat;
   border-radius: 10px;
 }
+
 .selected-seat {
   filter: hue-rotate(220deg);
 }
+
 .seat:hover {
   opacity: 0.8;
 }
+
 .left-rotate {
   margin-top: 30px;
   -webkit-transform: rotate(40deg);
@@ -92,6 +102,7 @@ input {
   -ms-transform: rotate(40deg);
   transform: rotate(40deg);
 }
+
 .right-rotate {
   margin-top: 30px;
   -webkit-transform: rotate(-40deg);
@@ -100,6 +111,7 @@ input {
   -ms-transform: rotate(-40deg);
   transform: rotate(-40deg);
 }
+
 .hidden {
   display: none;
 }
@@ -115,8 +127,9 @@ input {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-color: rgba(85,85,102, 0.3);
+  background-color: rgba(85, 85, 102, 0.4);
 }
+
 .modal-contents {
   font-family: 'Varela Round', sans-serif;
   background-color: grey;
@@ -126,17 +139,36 @@ input {
   margin: 15% auto;
   max-height: 181px;
   color: white;
+  font-size: .8em;
   border-radius: 20px;
   top: -24%;
   left: 32%;
   right: 34%;
   width: 32%;
   z-index: 8000;
-  /*display: none;*/
 }
+
 .reserved-seat {
   filter: grayscale(0.8);
 }
+
+.reserved-by {
+  position: relative;
+  top: 10px;
+  left: -4px;
+  z-index: 9999;
+  color: white;
+  overflow: visible;
+  font-size: .6em;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: rgba(85, 85, 102, 0.4)
+}
+
+.reserved-seat:hover {
+  display: block;
+}
+
 #seat-container {
   background: lightgrey;
   margin-top: 20px;
@@ -146,18 +178,23 @@ input {
   position: relative;
   z-index: 0;
 }
+
 #left-seat-column {
   margin-top: 60px;
 }
+
 #center-seat-column {
   margin-top: 140px;
 }
+
 #center-seat-column .row {
   margin-top: 20px;
 }
+
 #right-seat-column {
   margin-top: 40px;
 }
+
 #header {
   position: relative;
   text-align: center;
@@ -168,11 +205,11 @@ input {
   right: 15px;
   opacity: 0;
 }
+
 #user-inputs {
   position: absolute;
   padding: 10px;
   background-color: #556;
-  color: white;
   font-family: 'Varela Round', sans-serif;
   border-radius: 20px;
   text-align: center;
@@ -182,20 +219,13 @@ input {
   z-index: 8000;
   display: none;
 }
+
 #submit {
   width: 300px;
   border: none;
   border-radius: 10px;
   padding: 4px;
   margin-top: 20px;
-}
-.reserved-by {
-  z-index: 9999;
-  color:white;
-}
-
-.reserved-seat:hover{
-  display: block;
 }
 
 #fname {
