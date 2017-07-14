@@ -43,8 +43,8 @@ $(document).ready(function(){
       $('#insert-seat-ids').append(chosenSeats[i].id + ' ');
       $(chosenSeats[i]).addClass('reserved-seat');
     }
-    for (var i=0; i<reservedSeats.length; i++) {
-      $(reservedSeats[i]).html('<span class="reserved-by hide">'+patron.firstName+ ' ' +patron.lastName+ '</span>');
+    for (var i=0; i<chosenSeats.length; i++) {
+      $(chosenSeats[i]).html('<span class="reserved-by hide">'+patron.firstName+ ' ' +patron.lastName+ '</span>');
     }
     $('.selected-seat').removeClass('selected-seat');
     chosenSeats.length = 0;
