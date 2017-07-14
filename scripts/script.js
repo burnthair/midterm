@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   //Reveal UI upon seat selection
   $('div.seat').click(function (){
-    $('#user-inputs').removeClass('hidden')
+    $('#user-inputs').fadeIn()
   });
 
   // Upon clicking the Submit button, a modal appears
@@ -28,6 +28,7 @@ $(document).ready(function(){
   // The user input is displayed in the modal
   $('#submit').click(function(){
     $('.modal-container').removeClass('hidden');
+    $('#user-inputs').fadeOut();
     var reservedSeats = document.getElementsByClassName('reserved-seat')
     var chosenSeats = document.getElementsByClassName("selected-seat");
     var patron = {

@@ -119,10 +119,19 @@ input {
 .modal-contents {
   font-family: 'Varela Round', sans-serif;
   background-color: grey;
-  width: 500px;
   height: auto;
   padding: 25px;
+  position: absolute;
   margin: 15% auto;
+
+
+  border-radius: 20px;
+  /*top: 56px;*/
+  left: 34%;
+  right: 34%;
+  width: 32%;
+  z-index: 8000;
+  /*display: none;*/
 }
 .reserved-seat {
   filter: grayscale(0.8);
@@ -135,7 +144,6 @@ input {
   border-radius: 20px;
   position: relative;
   z-index: 0;
-  box-shadow: 0px 0px 30px 0px rgba(231,166,26,1);
 }
 #left-seat-column {
   margin-top: 60px;
@@ -162,8 +170,8 @@ input {
 #user-inputs {
   position: absolute;
   padding: 10px;
-  background-color: #75b3f0;
-  color: #556;
+  background-color: #556;
+  color: white;
   font-family: 'Varela Round', sans-serif;
   border-radius: 20px;
   text-align: center;
@@ -171,6 +179,7 @@ input {
   left: 356px;
   width: 460px;
   z-index: 8000;
+  display: none;
 }
 #submit {
   width: 300px;
@@ -188,6 +197,6 @@ input {
   display: block;
 }
 
-.curtain h1 {
-
+#fname {
+  margin-bottom: 5px;
 }
