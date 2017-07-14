@@ -6,6 +6,7 @@ $(document).ready(function(){
     $('.container').addClass("container-is-active");
     $('.curtain').addClass("curtain-is-active");
     $("h1").fadeOut("welcome-message");
+    $("h2").fadeOut("intro-message");
     setTimeout(function() {
       $('#header').fadeTo(2000, 1.0);
     }, 2000);
